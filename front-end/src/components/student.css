@@ -1,0 +1,93 @@
+/* General container styling */
+body {
+  background: linear-gradient(135deg, #e8f0f2, #b3d6db);
+  min-height: 100vh;
+  margin: 0;
+  font-family: Arial, sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+  padding: 20px;
+  background-color: rgba(255, 255, 255, 0.95);
+  border-radius: 10px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  max-width: 1200px; /* Set max-width to expand the container */
+  width: 90%; /* Set width to 90% to make it responsive */
+}
+
+/* Table styling with pastel theme */
+.custom-table {
+  width: 100%;
+  margin: 20px 0;
+  background-color: #f8fafb; /* Light background for the table */
+  color: #4a4a4a; /* Dark gray text */
+  border-collapse: collapse;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.custom-table th, .custom-table td {
+  padding: 12px;
+  text-align: center;
+  border-bottom: 1px solid #e0e6e9; /* Light gray border between rows */
+}
+
+.custom-table th {
+  background-color: #a8d0e6; /* Soft blue for the header */
+  color: #ffffff;
+  font-weight: bold;
+}
+
+.custom-table tr:nth-child(even) {
+  background-color: #e2f0f9; /* Light blue for alternating rows */
+}
+
+.custom-table tr:nth-child(odd) {
+  background-color: #f8fafb; /* White background for other rows */
+}
+
+/* Button styling with new theme */
+.custom-table .btn-warning {
+  background-color: #54a0ff; /* Soft blue for edit button */
+  color: #ffffff;
+  border: none;
+  padding: 5px 10px;
+  font-size: 14px;
+  border-radius: 4px;
+  margin-right: 5px; /* Adds space between Edit and Delete buttons */
+  transition: background-color 0.3s;
+}
+
+.custom-table .btn-danger {
+  background-color: #ff6b6b; /* Soft red for delete button */
+  color: #ffffff;
+  border: none;
+  padding: 5px 10px;
+  font-size: 14px;
+  border-radius: 4px;
+  transition: background-color 0.3s;
+}
+
+.custom-table .btn-warning:hover {
+  background-color: #407bca; /* Darker blue on hover for edit button */
+}
+
+.custom-table .btn-danger:hover {
+  background-color: #d9534f; /* Darker red on hover for delete button */
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .container {
+      padding: 10px;
+      max-width: 100%;
+  }
+
+  .custom-table {
+      width:100%;
+}
+}
